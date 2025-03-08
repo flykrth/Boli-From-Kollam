@@ -17,10 +17,10 @@ The official repository for Define 3.0 submission.
 ### Team Members
 | Name | Role | GitHub | LinkedIn |
 |------|------|--------|----------|
-| U Karthik Krishna | Mobile developer | [@username](https://github.com/flykrth) | [Profile](https://www.linkedin.com/in/flykrth) |
-| Naveen Srinivas | Back-end developer | [@username](https://github.com/naveen28204280) | [Profile](https://www.linkedin.com/in/naveen-srinivas-623667320) |
-| Malavika M | Front-end developer | [@username](https://github.com/Malavika05M) | [Profile](https://www.linkedin.com/in/malavika-m-426236230/) |
-| Tanneeru Sai Mahimanvitha | Hardware | [@username](https://github.com/Mahimasai) | [Profile](linkedin.com/in/sai-mahimanvitha-tanneeru-06878a321) |
+| U Karthik Krishna | Mobile developer | [@flykrth](https://github.com/flykrth) | [Profile](https://www.linkedin.com/in/flykrth) |
+| Naveen Srinivas | Back-end developer | [@naveen28204280](https://github.com/naveen28204280) | [Profile](https://www.linkedin.com/in/naveen-srinivas-623667320) |
+| Malavika M | Front-end developer | [@Malavika05M](https://github.com/Malavika05M) | [Profile](https://www.linkedin.com/in/malavika-m-426236230/) |
+| Tanneeru Sai Mahimanvitha | Hardware | [@Mahimasai](https://github.com/Mahimasai) | [Profile](linkedin.com/in/sai-mahimanvitha-tanneeru-06878a321) |
 
 ## Project Details
 
@@ -82,25 +82,25 @@ npm run dev
 ## Additional Resources
 
 ### Project Timeline
-_Phase 1: Data Collection & API Integration
-Gathered real-time soil condition and weather data using APIs.
-Developed AI models for crop suitability prediction based on data trends.
+Phase 1: _Data Collection & API Integration_
+_Gathered real-time soil condition and weather data using APIs._
+_Developed AI models for crop suitability prediction based on data trends._
 
-Phase 2: Backend Development (Flask)
-Implemented Flask APIs for soil analysis, market insights, and risk assessment.
+Phase 2: _Backend Development (Flask)_
+_Implemented Flask APIs for soil analysis, market insights, and risk assessment._
 
-Phase 3: Frontend Development (Flutter & React)
-Designed an intuitive mobile app (Flutter) for farmers with easy navigation.
-Developed a web-based dashboard (React) for broader data visualization.
+Phase 3: _Frontend Development (Flutter & React)_
+_Designed an intuitive mobile app (Flutter) for farmers with easy navigation._
+_Developed a web-based dashboard (React) for broader data visualization._
 
-Phase 4: AI-Powered Features & Market Ranking
-Developed a market ranking system to help farmers optimize crop sales.
+Phase 4: _AI-Powered Features & Market Ranking_
+_Developed a market ranking system to help farmers optimize crop sales._
 
-Phase 5: Full-Stack Integration & Testing
-Connected backend APIs with mobile and web interfaces.
-Conducted user testing to refine usability and fix bugs.
+Phase 5: _Full-Stack Integration & Testing_
+_Connected backend APIs with mobile and web interfaces._
+_Conducted user testing to refine usability and fix bugs._
 
-Final Milestone: Deployment & Future Enhancements_
+_Final Milestone: Deployment & Future Enhancements_
 
 ### Challenges Faced
 _AI Model Accuracy & Performance
@@ -112,11 +112,11 @@ Challenge: Designing a UI that is both data-rich and easy for farmers to navigat
 Solution: Created a simplified UI with color-coded maps and minimal text._
 
 ### Future Enhancements
-_Expand AI Capabilities
-Integrate advanced AI models for even more accurate crop suitability predictions.
+Expand AI Capabilities
+_Integrate advanced AI models for even more accurate crop suitability predictions._
 
 Community & Collaboration Features
-Create a social platform for farmers to share experiences and best practices._
+_Create a social platform for farmers to share experiences and best practices._
 
 ### References
 - [Agromonitoring API](https://home.agromonitoring.com/)
