@@ -1,0 +1,1 @@
+# Hardware set consisting of ESP32 and other sensors
