@@ -20,7 +20,7 @@ class HomeOptions {
         option: "Marketplace suggestions", iconPath: "assets/bulb.png"));
 
     options.add(
-        HomeOptions(option: "About Mission Mruda", iconPath: "assets/MM.png"));
+        HomeOptions(option: "High yield crops", iconPath: "assets/wheat.png"));
 
     return options;
   }

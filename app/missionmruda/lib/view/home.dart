@@ -5,6 +5,7 @@ import 'package:missionmruda/view/about.dart';
 import 'package:missionmruda/view/login.dart';
 import 'package:missionmruda/view/market.dart';
 import 'package:missionmruda/view/risk.dart';
+import 'package:missionmruda/view/seed.dart';
 import 'package:missionmruda/view/soil.dart';
 
 class HomePage extends StatefulWidget {
@@ -36,7 +37,7 @@ class _HomePageState extends State<HomePage> {
         page = CultivationRankingsScreen();
         break;
       case 3:
-        page = AboutScreen();
+        page = SeedMatchScreen();
         break;
       default:
         return;
