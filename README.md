@@ -103,13 +103,13 @@ _Conducted user testing to refine usability and fix bugs._
 _Final Milestone: Deployment & Future Enhancements_
 
 ### Challenges Faced
-_AI Model Accuracy & Performance
-Challenge: Balancing prediction accuracy with processing speed for real-time crop suitability analysis.
-Solution: Optimized models using feature selection, lightweight architectures, and on-device inference for faster results.
+AI Model Accuracy & Performance
+Challenge: _Balancing prediction accuracy with processing speed for real-time crop suitability analysis._
+Solution: _Optimized models using feature selection, lightweight architectures, and on-device inference for faster results._
 
 Responsive & Accessible UI
-Challenge: Designing a UI that is both data-rich and easy for farmers to navigate.
-Solution: Created a simplified UI with color-coded maps and minimal text._
+Challenge: _Designing a UI that is both data-rich and easy for farmers to navigate._
+Solution: _Created a simplified UI with color-coded maps and minimal text._
 
 ### Future Enhancements
 Expand AI Capabilities
