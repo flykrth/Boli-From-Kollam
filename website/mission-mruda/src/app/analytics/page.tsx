@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-// Define TypeScript types
 interface CityData {
   name: string;
   soilType: string;
@@ -11,7 +10,6 @@ interface CityData {
   recommendations: string;
 }
 
-// Sample data for crop cultivation details
 const cityData: Record<string, CityData> = {
   mumbai: {
     name: "Mumbai",
@@ -39,7 +37,6 @@ const cityData: Record<string, CityData> = {
 export default function CropCultivationPage() {
   const [selectedCity, setSelectedCity] = useState<CityData | null>(null);
 
-  // Handle city selection
   const handleCityClick = (city: string) => {
     setSelectedCity(cityData[city]);
   };
@@ -122,7 +119,6 @@ export default function CropCultivationPage() {
               exit={{ x: "100%" }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             >
-              {/* Back Button */}
               <button
                 className="text-[#F7FFF7] text-lg mb-4"
                 onClick={() => setSelectedCity(null)}
