@@ -34,7 +34,8 @@ _In this technologically advancing world, our farmers of India tend to struggle 
 _Our solution includes IoT-based soil monitoring, AI-driven analysis and real-time weather data to provide the most precise crop recommendations for specific locations with the help of a color-coded map of India indicating the probability of a crop to flourish, which empowers our farmers with actionable insights for sustainable farming. Therefore by reducing the crop failure risks and optimizing water usage, this initiative promises a climate resilient and sustainable agriculture._
 
 ### Demo
-[![Project Demo](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+[![Mobile app](https://img.youtube.com/vi/e2txgzN9xZo/0.jpg)](https://www.youtube.com/watch?v=e2txgzN9xZo)
+[![Mobile app](https://img.youtube.com/vi/DFdjdvu9DiA/0.jpg)](https://www.youtube.com/watch?v=DFdjdvu9DiA)
 
 ### Live Project
 [Project Name](https://your-project-url.com)
@@ -126,10 +127,10 @@ _Create a social platform for farmers to share experiences and best practices._
 
 ### Submission Checklist
 - [ ] Completed all sections of this README
-- [ ] Added project demo video
+✅ Added project demo video
 - [ ] Provided live project link
-- [✅] Ensured all team members are listed
-- [✅] Included setup instructions
+✅ Ensured all team members are listed
+✅ Included setup instructions
 - [ ] Submitted final code to repository
 
 ---
