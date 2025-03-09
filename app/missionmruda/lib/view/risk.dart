@@ -23,7 +23,7 @@ class _RiskPageState extends State<RiskPage> {
   Future<void> fetchRiskData() async {
     try {
       final response =
-          await http.get(Uri.parse("http://192.168.12.33:5001/predict"));
+          await http.get(Uri.parse("http://192.168.7.33:5001/predict"));
 
       if (response.statusCode == 200) {
         setState(() {

@@ -34,7 +34,7 @@ class _SeedMatchScreenState extends State<SeedMatchScreen> {
     }
 
     final response = await http.post(
-      Uri.parse("http://192.168.12.33:5003/match-crops"),
+      Uri.parse("http://192.168.7.33:5003/match-crops"),
       headers: {"Content-Type": "application/json"},
       body: json.encode({"city": _selectedCity}),
     );

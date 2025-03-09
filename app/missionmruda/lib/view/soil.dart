@@ -23,7 +23,7 @@ class _SoilPageState extends State<SoilPage> {
   }
 
   Future<void> fetchSensorData() async {
-    final String apiUrl = "http://192.168.1.100:5000/sensor-data"; // Flask API
+    final String apiUrl = "http://192.168.7.33:5004/data"; // Flask API
 
     try {
       final response = await http.get(Uri.parse(apiUrl));
@@ -31,9 +31,8 @@ class _SoilPageState extends State<SoilPage> {
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
         setState(() {
-          dhtTemperature = data['dht_temperature'];
           humidity = data['humidity'];
-          ds18b20Temperature = data['ds18b20_temperature'];
+          dhtTemperature = data['temperature'];
           isLoading = false;
         });
       } else {
@@ -48,12 +47,17 @@ class _SoilPageState extends State<SoilPage> {
       String title, String value, IconData icon, Color color) {
     return Container(
       padding: EdgeInsets.all(16),
-      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+      margin: EdgeInsets.symmetric(vertical: 10),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.8),
+        color: color.withOpacity(0.9),
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
-          BoxShadow(color: Colors.black26, blurRadius: 8, spreadRadius: 2),
+          BoxShadow(
+            color: Colors.black26,
+            blurRadius: 8,
+            spreadRadius: 2,
+            offset: Offset(0, 4),
+          ),
         ],
       ),
       child: Row(
@@ -63,12 +67,23 @@ class _SoilPageState extends State<SoilPage> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(title, style: TextStyle(fontSize: 18, color: Colors.white)),
-              Text(value,
-                  style: TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white)),
+              Text(
+                title,
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.white.withOpacity(0.9),
+                ),
+              ),
+              SizedBox(height: 5),
+              Text(
+                value,
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
             ],
           ),
         ],
@@ -102,55 +117,50 @@ class _SoilPageState extends State<SoilPage> {
           ),
           SizedBox(height: 10),
           Expanded(
-            child: SizedBox.expand(
-              child: Container(
-                height: 600,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(20),
-                        topRight: Radius.circular(20))),
-                child: Padding(
-                  padding: const EdgeInsets.all(15),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Column(
-                        children: [
-                          Text("Live Sensor Data"),
-                          isLoading
-                              ? Center(child: CircularProgressIndicator())
-                              : RefreshIndicator(
-                                  onRefresh: fetchSensorData,
-                                  child: ListView(
-                                    children: [
-                                      buildSensorContainer(
-                                          "Air Temperature",
-                                          "${dhtTemperature.toStringAsFixed(1)}°C",
-                                          Icons.thermostat,
-                                          Colors.orange),
-                                      buildSensorContainer(
-                                          "Humidity",
-                                          "${humidity.toStringAsFixed(1)}%",
-                                          Icons.water_drop,
-                                          Colors.blue),
-                                      buildSensorContainer(
-                                          "Soil Temperature",
-                                          "${ds18b20Temperature.toStringAsFixed(1)}°C",
-                                          Icons.grass,
-                                          Colors.brown),
-                                    ],
-                                  ),
-                                ),
-                        ],
-                      ),
-                    ],
-                  ),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20),
+                  topRight: Radius.circular(20),
+                ),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(15),
+                child: Column(
+                  children: [
+                    Text(
+                      "Live Sensor Data",
+                      style: TextStyle(fontSize: 18, color: Colors.white),
+                    ),
+                    SizedBox(height: 10),
+                    isLoading
+                        ? Center(child: CircularProgressIndicator())
+                        : Expanded(
+                            child: RefreshIndicator(
+                              onRefresh: fetchSensorData,
+                              child: ListView(
+                                physics: AlwaysScrollableScrollPhysics(),
+                                children: [
+                                  buildSensorContainer(
+                                      "Temperature",
+                                      "${dhtTemperature.toStringAsFixed(1)}°C",
+                                      Icons.thermostat,
+                                      Colors.orange),
+                                  buildSensorContainer(
+                                      "Humidity",
+                                      "${humidity.toStringAsFixed(1)}%",
+                                      Icons.water_drop,
+                                      Colors.blue),
+                                ],
+                              ),
+                            ),
+                          ),
+                  ],
                 ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );
@@ -158,9 +168,7 @@ class _SoilPageState extends State<SoilPage> {
 }
 
 class conditionBox extends StatelessWidget {
-  const conditionBox({
-    super.key,
-  });
+  const conditionBox({super.key});
 
   @override
   Widget build(BuildContext context) {

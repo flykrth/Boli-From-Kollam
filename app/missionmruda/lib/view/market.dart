@@ -22,7 +22,7 @@ class _CultivationRankingsScreenState extends State<CultivationRankingsScreen> {
   Future<void> fetchCultivationRankings() async {
     try {
       final response = await http
-          .get(Uri.parse("http://192.168.12.33:5002/cultivation-rankings"));
+          .get(Uri.parse("http://192.168.7.33:5002/cultivation-rankings"));
 
       if (response.statusCode == 200) {
         Map<String, dynamic> data = json.decode(response.body);

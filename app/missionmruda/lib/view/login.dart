@@ -27,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
       return;
     }
 
-    final url = Uri.parse('http://192.168.12.33:5000/login');
+    final url = Uri.parse('http://192.168.7.33:5000/login');
     final response = await http.post(
       url,
       headers: {"Content-Type": "application/json"},

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:missionmruda/model/appbar.dart';
 import 'package:missionmruda/model/home_options.dart';
-import 'package:missionmruda/view/about.dart';
 import 'package:missionmruda/view/login.dart';
 import 'package:missionmruda/view/market.dart';
 import 'package:missionmruda/view/risk.dart';
