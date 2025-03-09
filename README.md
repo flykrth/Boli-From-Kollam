@@ -127,10 +127,10 @@ _Create a social platform for farmers to share experiences and best practices._
 
 ### Submission Checklist
 - [ ] Completed all sections of this README
-✅ Added project demo video
+- ✅ Added project demo video
 - [ ] Provided live project link
-✅ Ensured all team members are listed
-✅ Included setup instructions
+- ✅ Ensured all team members are listed
+- ✅ Included setup instructions
 - [ ] Submitted final code to repository
 
 ---
