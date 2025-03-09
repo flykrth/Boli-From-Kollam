@@ -127,7 +127,7 @@ _Create a social platform for farmers to share experiences and best practices._
 - ✅ Added project demo video
 - ✅ Ensured all team members are listed
 - ✅ Included setup instructions
-- [ ] Submitted final code to repository
+- ✅ Submitted final code to repository
 
 ---
 
