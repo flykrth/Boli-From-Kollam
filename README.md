@@ -37,9 +37,6 @@ _Our solution includes IoT-based soil monitoring, AI-driven analysis and real-ti
 [![Mobile app](https://img.youtube.com/vi/e2txgzN9xZo/0.jpg)](https://www.youtube.com/watch?v=e2txgzN9xZo)
 [![Mobile app](https://img.youtube.com/vi/DFdjdvu9DiA/0.jpg)](https://www.youtube.com/watch?v=DFdjdvu9DiA)
 
-### Live Project
-[Project Name](https://your-project-url.com)
-
 ## Technical Implementation
 
 ### Technologies Used
@@ -126,9 +123,8 @@ _Create a social platform for farmers to share experiences and best practices._
 ---
 
 ### Submission Checklist
-- [ ] Completed all sections of this README
+- ✅ Completed all sections of this README
 - ✅ Added project demo video
-- [ ] Provided live project link
 - ✅ Ensured all team members are listed
 - ✅ Included setup instructions
 - [ ] Submitted final code to repository
